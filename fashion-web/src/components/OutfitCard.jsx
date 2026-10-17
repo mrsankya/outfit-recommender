@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import { Heart, Sparkles } from 'lucide-react';
+import { Heart, Sparkles, Palette, ChevronDown, ChevronUp } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useWardrobe } from '../context/WardrobeContext';
+import { analyzeColorHarmony } from '../utils/colorTheory';
 import PromptModal from './PromptModal';
 import './OutfitCard.css';
 
@@ -43,6 +44,9 @@ export default function OutfitCard({ outfit, index }) {
   const { toggle, isSaved } = useWardrobe();
   const saved = isSaved(outfit.id);
   const [showPrompt, setShowPrompt] = useState(false);
+  const [showHarmony, setShowHarmony] = useState(false);
+
+  const harmony = analyzeColorHarmony(outfit);
 
   return (
     <>
@@ -104,6 +108,68 @@ export default function OutfitCard({ outfit, index }) {
         {/* Colour Palette */}
         <div className="colour-row">
           {outfit.colours.map(c => <ColourChip key={c} colour={c} />)}
+        </div>
+
+        {/* Color Theory 60-30-10 & Harmony Section */}
+        <div className="card-harmony-box">
+          <button
+            type="button"
+            className="harmony-toggle-btn"
+            onClick={() => setShowHarmony(!showHarmony)}
+            title="Explore 60-30-10 Color Theory & Harmony Breakdown"
+          >
+            <div className="harmony-btn-left">
+              <Palette size={12} className="harmony-icon" />
+              <span className="harmony-score-text">{harmony.matchScore}% Match</span>
+              <span className="harmony-type-tag" style={{ borderColor: harmony.badgeColor, color: harmony.badgeColor }}>
+                {harmony.harmonyType}
+              </span>
+            </div>
+            {showHarmony ? <ChevronUp size={13} /> : <ChevronDown size={13} />}
+          </button>
+
+          {showHarmony && (
+            <div className="harmony-expanded-details">
+              {/* 60-30-10 Proportional Visual Bar */}
+              <div className="ratio-bar">
+                <div
+                  className="ratio-segment dominant"
+                  style={{ width: '60%', background: harmony.dominant.hex }}
+                  title={`60% Dominant: ${harmony.dominant.name}`}
+                />
+                <div
+                  className="ratio-segment secondary"
+                  style={{ width: '30%', background: harmony.secondary.hex }}
+                  title={`30% Secondary: ${harmony.secondary.name}`}
+                />
+                <div
+                  className="ratio-segment accent"
+                  style={{ width: '10%', background: harmony.accent.hex }}
+                  title={`10% Accent: ${harmony.accent.name}`}
+                />
+              </div>
+
+              {/* 60-30-10 Breakdown Items */}
+              <div className="ratio-labels">
+                <div className="ratio-item">
+                  <span className="ratio-dot" style={{ background: harmony.dominant.hex }} />
+                  <span className="ratio-name"><strong>60%</strong> {harmony.dominant.name}</span>
+                </div>
+                <div className="ratio-item">
+                  <span className="ratio-dot" style={{ background: harmony.secondary.hex }} />
+                  <span className="ratio-name"><strong>30%</strong> {harmony.secondary.name}</span>
+                </div>
+                <div className="ratio-item">
+                  <span className="ratio-dot" style={{ background: harmony.accent.hex }} />
+                  <span className="ratio-name"><strong>10%</strong> {harmony.accent.name}</span>
+                </div>
+              </div>
+
+              <p className="harmony-explanation">
+                🎨 {harmony.explanation}
+              </p>
+            </div>
+          )}
         </div>
 
         {/* Tip */}
