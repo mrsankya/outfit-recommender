@@ -4,6 +4,7 @@ import { Trash2, ShoppingBag, RotateCcw, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useWardrobe } from '../context/WardrobeContext';
 import OutfitCard from '../components/OutfitCard';
+import WeeklyPlanner from '../components/WeeklyPlanner';
 import './Wardrobe.css';
 
 export default function WardrobePage() {
@@ -27,13 +28,16 @@ export default function WardrobePage() {
             <h1 className="page-title">Curated Wardrobe Collection</h1>
             <p className="page-desc">
               Your personal closet of styled looks. Pre-populated with authentic Indian ethnic attire,
-              business formals, party wear, and casuals for evaluation and jury demonstration.
+              business formals, party wear, and casuals with a built-in 7-day weekly planner for evaluation and jury demonstration.
             </p>
           </motion.div>
         </div>
       </div>
 
       <div className="container wardrobe-body">
+        {/* 7-Day Weekly OOTD Planner */}
+        <WeeklyPlanner savedOutfits={saved} />
+
         <AnimatePresence mode="wait">
           {saved.length === 0 ? (
             <motion.div

@@ -95,4 +95,9 @@ python fashion_outfit_recommendation.py
      - Parses natural language voice commands (e.g. "show me traditional outfits for winter", "casual summer streetwear", "party clothes in ethnic style") into discrete occasion, season, and style filters.
      - Real-time animated audio wave and pulsing indicator during voice capture.
      - Automatic speech synthesis feedback ("Showing Traditional, Winter looks") via Web Speech Synthesis API.
+   - **Feature 4: Weekly 7-Day Outfit Calendar Planner in My Wardrobe**:
+     - Visual Monday–Sunday day cards with contextual vibe tags (e.g. "Fresh Start / College Sharp", "Presentation Semi-Formal", "Weekend Party", "Festive Traditional").
+     - 1-click modal picker to assign saved wardrobe outfits to specific days of the week.
+     - "Auto-Schedule Week" algorithmic engine that intelligently balances occasions across the full week.
+     - Full persistence in `localStorage` (`weeklyOutfitPlan`).
 
