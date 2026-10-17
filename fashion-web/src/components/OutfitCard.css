@@ -313,3 +313,93 @@
   border-radius: 0 4px 4px 0;
   margin: 0;
 }
+
+/* ── Budget & Cost Breakdown ── */
+.card-budget-box {
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all var(--transition);
+  margin-top: 2px;
+}
+
+.budget-toggle-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--text-primary);
+  font-size: 11px;
+}
+
+.budget-btn-left {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.budget-icon {
+  color: #10b981;
+}
+
+.budget-total-text {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.budget-tier-tag {
+  font-size: 10px;
+  font-weight: 600;
+  border: 1px solid;
+  border-radius: 12px;
+  padding: 1px 7px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.budget-expanded-details {
+  padding: 8px 12px 12px;
+  border-top: 1px dashed var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.budget-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.budget-item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.budget-item-label {
+  font-weight: 500;
+}
+
+.budget-item-val {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.budget-summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  padding-top: 6px;
+  border-top: 1px solid var(--border);
+  color: var(--text-primary);
+}

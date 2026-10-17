@@ -1,8 +1,9 @@
 import { useState } from 'react';
-import { Heart, Sparkles, Palette, ChevronDown, ChevronUp } from 'lucide-react';
+import { Heart, Sparkles, Palette, IndianRupee, ChevronDown, ChevronUp } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useWardrobe } from '../context/WardrobeContext';
 import { analyzeColorHarmony } from '../utils/colorTheory';
+import { calculateOutfitBudget } from '../utils/budgetPricing';
 import PromptModal from './PromptModal';
 import './OutfitCard.css';
 
@@ -45,8 +46,10 @@ export default function OutfitCard({ outfit, index }) {
   const saved = isSaved(outfit.id);
   const [showPrompt, setShowPrompt] = useState(false);
   const [showHarmony, setShowHarmony] = useState(false);
+  const [showBudget, setShowBudget] = useState(false);
 
   const harmony = analyzeColorHarmony(outfit);
+  const budget = calculateOutfitBudget(outfit);
 
   return (
     <>
@@ -168,6 +171,42 @@ export default function OutfitCard({ outfit, index }) {
               <p className="harmony-explanation">
                 🎨 {harmony.explanation}
               </p>
+            </div>
+          )}
+        </div>
+
+        {/* Estimated Outfit Cost & Budget Tier Breakdown */}
+        <div className="card-budget-box">
+          <button
+            type="button"
+            className="budget-toggle-btn"
+            onClick={() => setShowBudget(!showBudget)}
+            title="View Estimated Retail Price & Cost Breakdown"
+          >
+            <div className="budget-btn-left">
+              <IndianRupee size={12} className="budget-icon" />
+              <span className="budget-total-text">{budget.totalFormatted} Est.</span>
+              <span className="budget-tier-tag" style={{ borderColor: budget.tierColor, color: budget.tierColor }}>
+                {budget.tierLabel}
+              </span>
+            </div>
+            {showBudget ? <ChevronUp size={13} /> : <ChevronDown size={13} />}
+          </button>
+
+          {showBudget && (
+            <div className="budget-expanded-details">
+              <div className="budget-items-list">
+                {budget.items.map(it => (
+                  <div key={it.label} className="budget-item-row">
+                    <span className="budget-item-label">{it.label}</span>
+                    <span className="budget-item-val">{it.formatted}</span>
+                  </div>
+                ))}
+              </div>
+              <div className="budget-summary-row">
+                <span>Total Retail Estimate</span>
+                <strong>{budget.totalFormatted}</strong>
+              </div>
             </div>
           )}
         </div>

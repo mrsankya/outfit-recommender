@@ -103,4 +103,8 @@ python fashion_outfit_recommendation.py
    - **Feature 5: Indian Festival & Cultural Event Dress Code Selector**:
      - Dedicated selector covering key Indian celebrations: Diwali & Puja, Royal Wedding & Baraat, Haldi & Sangeet, Navratri Garba, Eid & Festive Dawat, and College Traditional Day.
      - Automatically applies traditional/ethnic occasion filters, curated color palettes (e.g. Haldi Mustard, Royal Maroon, Chikankari White), and provides expert styling tips with matching outfits boosted to the top.
+   - **Feature 6: Budget Tier & Outfit Cost Breakdown (₹ INR)**:
+     - Retail estimation engine providing realistic Indian Rupee (₹ INR) prices and itemized breakdowns (Top, Bottom, Footwear, Accessories).
+     - Categorizes looks into realistic budget tiers: College Budget, Daily Smart, Corporate Executive, Night Glamour, and Royal Festive.
+     - Interactive expandable cost breakdown with total estimate directly on each outfit card.
 
