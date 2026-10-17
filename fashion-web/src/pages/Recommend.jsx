@@ -1,10 +1,11 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Search, RotateCcw, SlidersHorizontal, Dices, UploadCloud } from 'lucide-react';
+import { Search, RotateCcw, SlidersHorizontal, Dices, UploadCloud, UserCheck, Sparkles } from 'lucide-react';
 import { OCCASIONS, SEASONS, STYLES, getRecommendations, getRandomOutfits, ALL_OUTFITS } from '../data/catalogue';
 import OutfitCard from '../components/OutfitCard';
 import WeatherWidget from '../components/WeatherWidget';
 import ClothUploadModal from '../components/ClothUploadModal';
+import StyleProfileModal from '../components/StyleProfileModal';
 import './Recommend.css';
 
 const OCCASION_ICONS = {
@@ -58,19 +59,46 @@ export default function Recommend() {
   const [results,  setResults]  = useState(null);
   const [searched, setSearched] = useState(false);
   const [showUploadModal, setShowUploadModal] = useState(false);
+  const [showProfileModal, setShowProfileModal] = useState(false);
   const [customOutfits, setCustomOutfits] = useState([]);
+  const [styleProfile, setStyleProfile] = useState(() => {
+    try {
+      const saved = localStorage.getItem('userStyleProfile');
+      return saved ? JSON.parse(saved) : null;
+    } catch {
+      return null;
+    }
+  });
 
   const handleSearch = useCallback(() => {
-    const baseResults = getRecommendations(occasion, season, style);
+    let baseResults = getRecommendations(occasion, season, style);
     // Include user-uploaded matching outfits
     const matchedCustom = customOutfits.filter(o =>
       (occasion === "Any" || o.occasion === occasion) &&
       (season   === "Any" || o.season   === season)   &&
       (style    === "Any" || o.style    === style)
     );
-    setResults([...matchedCustom, ...baseResults]);
+    let allMatches = [...matchedCustom, ...baseResults];
+
+    // Boost outfits that harmonize with the user's undertone palette
+    if (styleProfile && styleProfile.palette?.bestColors?.length) {
+      const bestColors = styleProfile.palette.bestColors.map(c => c.toLowerCase());
+      allMatches = [...allMatches].sort((a, b) => {
+        const aScore = a.items?.reduce((acc, it) => {
+          const match = bestColors.some(bc => (it.color || '').toLowerCase().includes(bc) || (it.name || '').toLowerCase().includes(bc));
+          return acc + (match ? 1 : 0);
+        }, 0) || 0;
+        const bScore = b.items?.reduce((acc, it) => {
+          const match = bestColors.some(bc => (it.color || '').toLowerCase().includes(bc) || (it.name || '').toLowerCase().includes(bc));
+          return acc + (match ? 1 : 0);
+        }, 0) || 0;
+        return bScore - aScore;
+      });
+    }
+
+    setResults(allMatches);
     setSearched(true);
-  }, [occasion, season, style, customOutfits]);
+  }, [occasion, season, style, customOutfits, styleProfile]);
 
   const handleExploreRandom = useCallback(() => {
     const randomSet = getRandomOutfits(9);
@@ -91,6 +119,15 @@ export default function Recommend() {
     setSearched(true);
   }, []);
 
+  const handleProfileSave = (newProfile) => {
+    setStyleProfile(newProfile);
+    setShowProfileModal(false);
+    // Trigger updated recommendations if currently active
+    if (searched) {
+      setTimeout(() => handleSearch(), 50);
+    }
+  };
+
   const handleReset = () => {
     setOccasion('Any'); setSeason('Any'); setStyle('Any');
     setResults(null); setSearched(false);
@@ -109,7 +146,7 @@ export default function Recommend() {
             <h1 className="page-title">Find your look</h1>
             <p className="page-desc">
               Filter by occasion, season, and style, leverage live weather-aware recommendations,
-              or upload photos of your own clothes to generate matching coordinated outfits.
+              personalize according to your skin undertone & silhouette, or upload your own wardrobe items.
             </p>
           </motion.div>
         </div>
@@ -168,13 +205,48 @@ export default function Recommend() {
               <UploadCloud size={17} />
               Upload Your Clothes
             </button>
+            <button
+              className="profile-trigger-btn"
+              onClick={() => setShowProfileModal(true)}
+              title="Personalize Undertone & Silhouette"
+            >
+              <UserCheck size={17} />
+              {styleProfile ? `${styleProfile.palette?.label || 'Profile Active'}` : 'Style Consultation'}
+            </button>
           </div>
+
+          {/* Active Style Profile Summary Bar */}
+          {styleProfile && (
+            <div className="profile-active-bar">
+              <div className="pab-left">
+                <span className="pab-badge">
+                  <Sparkles size={14} /> {styleProfile.palette?.label}
+                </span>
+                <span>• {styleProfile.silhouette?.toUpperCase()} Silhouette • Style: {styleProfile.aesthetic}</span>
+                <div className="pab-swatches">
+                  {styleProfile.palette?.hexes?.slice(0, 5).map((hex, idx) => (
+                    <span key={idx} className="pab-swatch" style={{ background: hex }} title={styleProfile.palette.bestColors[idx]} />
+                  ))}
+                </div>
+              </div>
+              <button className="pab-edit-btn" onClick={() => setShowProfileModal(true)}>
+                Edit Profile
+              </button>
+            </div>
+          )}
         </motion.div>
 
         {showUploadModal && (
           <ClothUploadModal
             onClose={() => setShowUploadModal(false)}
             onCustomItemAdded={handleCustomItemAdded}
+          />
+        )}
+
+        {showProfileModal && (
+          <StyleProfileModal
+            onClose={() => setShowProfileModal(false)}
+            onSaveProfile={handleProfileSave}
           />
         )}
 

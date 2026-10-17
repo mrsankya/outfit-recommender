@@ -82,3 +82,12 @@ python fashion_outfit_recommendation.py
      - Added `ScrollToTop` router navigation listener to guarantee zero scroll freeze across page transitions.
      - Added `overscroll-behavior: contain` to `PromptModal` and `ClothUploadModal` with safe unmount cleanup.
 
+5. **New Advanced Features (Continuous Implementation)**:
+   - **Feature 1: Color Theory 60-30-10 Rule & Harmony Breakdown**:
+     - Algorithmic analysis of dominant (60%), secondary (30%), and accent (10%) color balance.
+     - Classifies harmony types (Monochromatic, Complementary, Analogous, Royal Festive, Sartorial) with dynamic match score and interactive visual ratio breakdown on every outfit card.
+   - **Feature 2: Skin Undertone & Body Silhouette Stylist Consultation**:
+     - Interactive modal profiler with Warm, Cool, and Neutral undertones, live seasonal palette preview (hex swatches), body silhouette selector (Lean, Athletic, Broad, Curvy), and style aesthetic preferences.
+     - Automatically prioritizes and boosts outfits matching the user's flattering undertone color palette.
+     - Persistent in `localStorage` with active stylist status indicator chip and quick edit consultation bar.
+
