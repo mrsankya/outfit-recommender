@@ -1,10 +1,11 @@
 import { useState } from 'react';
-import { Heart, Sparkles, Palette, IndianRupee, ChevronDown, ChevronUp } from 'lucide-react';
+import { Heart, Sparkles, Palette, IndianRupee, Share2, ChevronDown, ChevronUp } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useWardrobe } from '../context/WardrobeContext';
 import { analyzeColorHarmony } from '../utils/colorTheory';
 import { calculateOutfitBudget } from '../utils/budgetPricing';
 import PromptModal from './PromptModal';
+import LookbookModal from './LookbookModal';
 import './OutfitCard.css';
 
 const COLOUR_MAP = {
@@ -47,6 +48,7 @@ export default function OutfitCard({ outfit, index }) {
   const [showPrompt, setShowPrompt] = useState(false);
   const [showHarmony, setShowHarmony] = useState(false);
   const [showBudget, setShowBudget] = useState(false);
+  const [showLookbook, setShowLookbook] = useState(false);
 
   const harmony = analyzeColorHarmony(outfit);
   const budget = calculateOutfitBudget(outfit);
@@ -217,19 +219,33 @@ export default function OutfitCard({ outfit, index }) {
           <span className="tip-text">{outfit.tip}</span>
         </div>
 
-        {/* AI Try-on Visualizer Prompt Button */}
-        <button
-          className="ai-prompt-trigger-btn"
-          onClick={() => setShowPrompt(true)}
-          title="Generate AI prompt to visualize how you look in this outfit"
-        >
-          <Sparkles size={14} />
-          <span>AI Try-On Prompt</span>
-        </button>
+        {/* Actions Footer: AI Try-On & Lookbook Modal Buttons */}
+        <div className="card-actions-footer">
+          <button
+            className="ai-prompt-trigger-btn"
+            onClick={() => setShowPrompt(true)}
+            title="Generate AI prompt to visualize how you look in this outfit"
+          >
+            <Sparkles size={14} />
+            <span>AI Try-On</span>
+          </button>
+          <button
+            className="lookbook-trigger-btn"
+            onClick={() => setShowLookbook(true)}
+            title="Export / Share OOTD Lookbook Card"
+          >
+            <Share2 size={14} />
+            <span>Lookbook</span>
+          </button>
+        </div>
       </motion.div>
 
       {showPrompt && (
         <PromptModal outfit={outfit} onClose={() => setShowPrompt(false)} />
+      )}
+
+      {showLookbook && (
+        <LookbookModal outfit={outfit} onClose={() => setShowLookbook(false)} />
       )}
     </>
   );

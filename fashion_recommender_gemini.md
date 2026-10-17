@@ -107,4 +107,8 @@ python fashion_outfit_recommendation.py
      - Retail estimation engine providing realistic Indian Rupee (₹ INR) prices and itemized breakdowns (Top, Bottom, Footwear, Accessories).
      - Categorizes looks into realistic budget tiers: College Budget, Daily Smart, Corporate Executive, Night Glamour, and Royal Festive.
      - Interactive expandable cost breakdown with total estimate directly on each outfit card.
+   - **Feature 7: Export / Download Shareable OOTD Lookbook Card**:
+     - High-fashion Instagram/Polaroid style lookbook card previewing photo, garment breakdown, color harmony score, budget tier, and stylist tips.
+     - 1-click clipboard copy of formatted outfit details for social media / presentation slides.
+     - Instant WhatsApp Web share integration and browser printable / PDF save capability.
 
