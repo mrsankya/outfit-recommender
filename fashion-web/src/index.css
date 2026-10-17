@@ -1,0 +1,79 @@
+/* src/index.css  — Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Light theme (Zara/H&M style) */
+  --bg:          #FFFFFF;
+  --bg-soft:     #F8F7F4;
+  --bg-card:     #FFFFFF;
+  --border:      #E8E4DF;
+  --text-primary:#111111;
+  --text-muted:  #888888;
+  --accent:      #111111;
+  --accent-inv:  #FFFFFF;
+  --tag-bg:      #111111;
+  --tag-fg:      #FFFFFF;
+  --tip-bg:      #F0EDE8;
+  --tip-text:    #444444;
+  --shadow:      0 4px 24px rgba(0,0,0,0.08);
+  --shadow-lg:   0 12px 40px rgba(0,0,0,0.12);
+  --transition:  0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+[data-theme="dark"] {
+  --bg:          #0D0D0D;
+  --bg-soft:     #161616;
+  --bg-card:     #1A1A1A;
+  --border:      #2A2A2A;
+  --text-primary:#F5F5F5;
+  --text-muted:  #888888;
+  --accent:      #F5F5F5;
+  --accent-inv:  #0D0D0D;
+  --tag-bg:      #F5F5F5;
+  --tag-fg:      #0D0D0D;
+  --tip-bg:      #222222;
+  --tip-text:    #CCCCCC;
+  --shadow:      0 4px 24px rgba(0,0,0,0.4);
+  --shadow-lg:   0 12px 40px rgba(0,0,0,0.6);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  height: auto;
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text-primary);
+  transition: background var(--transition), color var(--transition);
+  overflow-x: hidden;
+  overflow-y: auto;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  overscroll-behavior-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+  line-height: 1.2;
+}
+
+::selection { background: #111; color: #fff; }
+[data-theme="dark"] ::selection { background: #fff; color: #000; }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+
+/* Utility */
+.container { max-width: 1280px; margin: 0 auto; padding: 0 24px; }
+.section { padding: 100px 0; }

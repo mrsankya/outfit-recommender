@@ -1,0 +1,217 @@
+/* src/components/PromptModal.css */
+.prompt-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  overscroll-behavior: contain;
+}
+
+.prompt-modal {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  width: 100%;
+  max-width: 680px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 28px;
+  max-height: 90vh;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.pm-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.pm-title-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.pm-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: var(--accent);
+  background: var(--bg-soft);
+  padding: 4px 10px;
+  border-radius: 20px;
+  width: fit-content;
+  border: 1px solid var(--border);
+}
+
+.pm-title-wrap h2 {
+  font-size: 22px;
+  color: var(--text-primary);
+  font-family: 'Playfair Display', serif;
+}
+
+.pm-title-wrap p {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.pm-close {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: all var(--transition);
+  flex-shrink: 0;
+}
+.pm-close:hover {
+  border-color: var(--text-primary);
+  color: var(--text-primary);
+}
+
+/* Controls */
+.pm-controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  background: var(--bg-soft);
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.pm-controls > div:last-child {
+  grid-column: span 2;
+}
+
+.pm-control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.pm-control-group label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.pm-control-group select {
+  padding: 9px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-primary);
+  font-size: 13px;
+  outline: none;
+  cursor: pointer;
+  transition: border-color var(--transition);
+}
+.pm-control-group select:focus {
+  border-color: var(--text-primary);
+}
+
+/* Prompt box */
+.pm-output-section,
+.pm-negative-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pm-output-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.pm-copy-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 16px;
+  border-radius: 6px;
+  background: var(--accent);
+  color: var(--accent-inv);
+  font-size: 12px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: opacity var(--transition);
+}
+.pm-copy-btn:hover { opacity: 0.85; }
+.pm-copy-btn.copied {
+  background: #27ae60;
+  color: #fff;
+}
+
+.pm-copy-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 12px;
+  cursor: pointer;
+}
+.pm-copy-link:hover { color: var(--text-primary); }
+
+.pm-prompt-textarea,
+.pm-negative-textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--bg-soft);
+  color: var(--text-primary);
+  font-family: monospace;
+  font-size: 12px;
+  line-height: 1.6;
+  resize: none;
+  outline: none;
+}
+.pm-prompt-textarea:focus { border-color: var(--text-primary); }
+
+.pm-tips {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  background: var(--tip-bg);
+  padding: 12px 16px;
+  border-radius: 8px;
+}
+.pm-tips strong { color: var(--text-primary); }
+
+@media (max-width: 640px) {
+  .pm-controls { grid-template-columns: 1fr; }
+  .pm-controls > div:last-child { grid-column: span 1; }
+}

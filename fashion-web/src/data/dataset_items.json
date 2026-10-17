@@ -1,0 +1,602 @@
+[
+  {
+    "id": 44,
+    "name": "Tailored Formal Blazer #1",
+    "occasion": "Formal",
+    "season": "Winter",
+    "style": "Business Formal",
+    "top": "Tailored Formal Blazer",
+    "bottom": "Tailored slim trousers",
+    "shoes": "Leather Oxford shoes",
+    "accessory": "Steel watch & pocket square",
+    "colours": [
+      "Navy",
+      "Black",
+      "Charcoal"
+    ],
+    "tip": "Layer with crisp trousers or dark jeans for an effortless transition from office to evening.",
+    "emoji": "\ud83e\udde5",
+    "image": "/dataset/Blazer/001912_280188340_thumbnail_progressive_thumbnail.jpg",
+    "source": "kaggle_clothes_dataset"
+  },
+  {
+    "id": 45,
+    "name": "Tailored Formal Blazer #2",
+    "occasion": "Party",
+    "season": "Spring/Autumn",
+    "style": "Smart Casual",
+    "top": "Tailored Formal Blazer",
+    "bottom": "Tailored slim trousers",
+    "shoes": "Leather Oxford shoes",
+    "accessory": "Steel watch & pocket square",
+    "colours": [
+      "Navy",
+      "Black",
+      "Charcoal"
+    ],
+    "tip": "Layer with crisp trousers or dark jeans for an effortless transition from office to evening.",
+    "emoji": "\ud83e\udde5",
+    "image": "/dataset/Blazer/002800_158897544_thumbnail_progressive_thumbnail.jpg",
+    "source": "kaggle_clothes_dataset"
+  },
+  {
+    "id": 46,
+    "name": "Tailored Formal Blazer #3",
+    "occasion": "Formal",
+    "season": "Winter",
+    "style": "Business Formal",
+    "top": "Tailored Formal Blazer",
+    "bottom": "Tailored slim trousers",
+    "shoes": "Leather Oxford shoes",
+    "accessory": "Steel watch & pocket square",
+    "colours": [
+      "Navy",
+      "Black",
+      "Charcoal"
+    ],
+    "tip": "Layer with crisp trousers or dark jeans for an effortless transition from office to evening.",
+    "emoji": "\ud83e\udde5",
+    "image": "/dataset/Blazer/00342aff-ba69-4cf2-ae62-e00680e9547a.jpg",
+    "source": "kaggle_clothes_dataset"
+  },
+  {
+    "id": 47,
+    "name": "Urban Streetwear Hoodie #1",
+    "occasion": "Casual",
+    "season": "Winter",
+    "style": "Streetwear",
+    "top": "Urban Streetwear Hoodie",
+    "bottom": "Fleece cargo joggers",
+    "shoes": "High-top sneakers",
+    "accessory": "Beanie & sling bag",
+    "colours": [
+      "Black",
+      "Grey",
+      "Olive"
+    ],
+    "tip": "Pair with relaxed joggers or cargo pants for ultimate everyday streetwear comfort.",
+    "emoji": "\ud83e\udde2",
+    "image": "/dataset/Hoodie/halfzip_hoodie_awk_1697034196_0d90db76_progressive_thumbnail.jpg",
+    "source": "kaggle_clothes_dataset"
+  },
+  {
+    "id": 48,
+    "name": "Urban Streetwear Hoodie #2",
+    "occasion": "Sports",
+    "season": "Monsoon",
+    "style": "Sporty",
+    "top": "Urban Streetwear Hoodie",
+    "bottom": "Fleece cargo joggers",
+    "shoes": "High-top sneakers",
+    "accessory": "Beanie & sling bag",
+    "colours": [
+      "Black",
+      "Grey",
+      "Olive"
+    ],
+    "tip": "Pair with relaxed joggers or cargo pants for ultimate everyday streetwear comfort.",
+    "emoji": "\ud83e\udde2",
+    "image": "/dataset/Hoodie/have_a_good_time_small_frame_h_1696995560_1bb72942_progressive_thumbnail.jpg",
+    "source": "kaggle_clothes_dataset"
+  },
+  {
+    "id": 49,
+    "name": "Urban Streetwear Hoodie #3",
+    "occasion": "Casual",
+    "season": "Winter",
+    "style": "Streetwear",
+    "top": "Urban Streetwear Hoodie",
+    "bottom": "Fleece cargo joggers",
+    "shoes": "High-top sneakers",
+    "accessory": "Beanie & sling bag",
+    "colours": [
+      "Black",
+      "Grey",
+      "Olive"
+    ],
+    "tip": "Pair with relaxed joggers or cargo pants for ultimate everyday streetwear comfort.",
+    "emoji": "\ud83e\udde2",
+    "image": "/dataset/Hoodie/hoodie_adidas_camo_1696947871_aeca6d2a_progressive_thumbnail.jpg",
+    "source": "kaggle_clothes_dataset"
+  },
+  {
+    "id": 50,
+    "name": "Classic Washed Denim Jacket #1",
+    "occasion": "Casual",
+    "season": "Spring/Autumn",
+    "style": "Smart Casual",
+    "top": "Classic Washed Denim Jacket",
+    "bottom": "Slim black chinos",
+    "shoes": "White leather sneakers",
+    "accessory": "Leather strap watch",
+    "colours": [
+      "Denim Blue",
+      "Light Blue",
+      "White"
+    ],
+    "tip": "Timeless outerwear piece. Contrast with black chinos or earth-tone trousers.",
+    "emoji": "\ud83e\udde5",
+    "image": "/dataset/Jaket_Denim/a04270d0-c1f1-4f31-93cc-8555ac708ec4.jpg",
+    "source": "kaggle_clothes_dataset"
+  },
+  {
+    "id": 51,
+    "name": "Classic Washed Denim Jacket #2",
+    "occasion": "Party",
+    "season": "Winter",
+    "style": "Streetwear",
+    "top": "Classic Washed Denim Jacket",
+    "bottom": "Slim black chinos",
+    "shoes": "White leather sneakers",
+    "accessory": "Leather strap watch",
+    "colours": [
+      "Denim Blue",
+      "Light Blue",
+      "White"
+    ],
+    "tip": "Timeless outerwear piece. Contrast with black chinos or earth-tone trousers.",
+    "emoji": "\ud83e\udde5",
+    "image": "/dataset/Jaket_Denim/a1bfd604-f422-444e-81c3-b822ade97d73.jpg",
+    "source": "kaggle_clothes_dataset"
+  },
+  {
+    "id": 52,
+    "name": "Classic Washed Denim Jacket #3",
+    "occasion": "Casual",
+    "season": "Spring/Autumn",
+    "style": "Smart Casual",
+    "top": "Classic Washed Denim Jacket",
+    "bottom": "Slim black chinos",
+    "shoes": "White leather sneakers",
+    "accessory": "Leather strap watch",
+    "colours": [
+      "Denim Blue",
+      "Light Blue",
+      "White"
+    ],
+    "tip": "Timeless outerwear piece. Contrast with black chinos or earth-tone trousers.",
+    "emoji": "\ud83e\udde5",
+    "image": "/dataset/Jaket_Denim/a1d8cba7-193b-48ef-ba84-da551156b40c.jpg",
+    "source": "kaggle_clothes_dataset"
+  },
+  {
+    "id": 53,
+    "name": "Minimalist Cotton Crewneck Tee #1",
+    "occasion": "Casual",
+    "season": "Summer",
+    "style": "Smart Casual",
+    "top": "Minimalist Cotton Crewneck Tee",
+    "bottom": "Linen blend shorts or chinos",
+    "shoes": "Low-top canvas sneakers",
+    "accessory": "Minimalist sunglasses",
+    "colours": [
+      "White",
+      "Black",
+      "Beige"
+    ],
+    "tip": "A foundational wardrobe staple. Tuck slightly into chinos for an elevated casual look.",
+    "emoji": "\ud83d\udc55",
+    "image": "/dataset/Kaos/00003aeb-ace5-43bf-9a0c-dc31a03e9cd2.jpg",
+    "source": "kaggle_clothes_dataset"
+  },
+  {
+    "id": 54,
+    "name": "Minimalist Cotton Crewneck Tee #2",
+    "occasion": "Beach",
+    "season": "Spring/Autumn",
+    "style": "Streetwear",
+    "top": "Minimalist Cotton Crewneck Tee",
+    "bottom": "Linen blend shorts or chinos",
+    "shoes": "Low-top canvas sneakers",
+    "accessory": "Minimalist sunglasses",
+    "colours": [
+      "White",
+      "Black",
+      "Beige"
+    ],
+    "tip": "A foundational wardrobe staple. Tuck slightly into chinos for an elevated casual look.",
+    "emoji": "\ud83d\udc55",
+    "image": "/dataset/Kaos/00805d0e-7fe5-4251-b577-86065e4f6587.jpg",
+    "source": "kaggle_clothes_dataset"
+  },
+  {
+    "id": 55,
+    "name": "Minimalist Cotton Crewneck Tee #3",
+    "occasion": "Casual",
+    "season": "Summer",
+    "style": "Smart Casual",
+    "top": "Minimalist Cotton Crewneck Tee",
+    "bottom": "Linen blend shorts or chinos",
+    "shoes": "Low-top canvas sneakers",
+    "accessory": "Minimalist sunglasses",
+    "colours": [
+      "White",
+      "Black",
+      "Beige"
+    ],
+    "tip": "A foundational wardrobe staple. Tuck slightly into chinos for an elevated casual look.",
+    "emoji": "\ud83d\udc55",
+    "image": "/dataset/Kaos/0090ca2c-e8c8-43f6-b764-e48e0e954006.jpg",
+    "source": "kaggle_clothes_dataset"
+  },
+  {
+    "id": 56,
+    "name": "Crisp Button-Down Oxford Shirt #1",
+    "occasion": "Formal",
+    "season": "Summer",
+    "style": "Business Formal",
+    "top": "Crisp Button-Down Oxford Shirt",
+    "bottom": "Pleated formal trousers",
+    "shoes": "Tan suede loafers",
+    "accessory": "Leather belt & minimalist watch",
+    "colours": [
+      "White",
+      "Sky Blue",
+      "Light Grey"
+    ],
+    "tip": "Roll the sleeves to the forearm for business-casual meetings or smart dining.",
+    "emoji": "\ud83d\udc54",
+    "image": "/dataset/Kemeja/00e745c9-97d9-429d-8c3f-d3db7a2d2991.jpg",
+    "source": "kaggle_clothes_dataset"
+  },
+  {
+    "id": 57,
+    "name": "Crisp Button-Down Oxford Shirt #2",
+    "occasion": "Casual",
+    "season": "Spring/Autumn",
+    "style": "Smart Casual",
+    "top": "Crisp Button-Down Oxford Shirt",
+    "bottom": "Pleated formal trousers",
+    "shoes": "Tan suede loafers",
+    "accessory": "Leather belt & minimalist watch",
+    "colours": [
+      "White",
+      "Sky Blue",
+      "Light Grey"
+    ],
+    "tip": "Roll the sleeves to the forearm for business-casual meetings or smart dining.",
+    "emoji": "\ud83d\udc54",
+    "image": "/dataset/Kemeja/01b3083f-4387-4753-8ae2-a2470dc53f19.jpg",
+    "source": "kaggle_clothes_dataset"
+  },
+  {
+    "id": 58,
+    "name": "Crisp Button-Down Oxford Shirt #3",
+    "occasion": "Formal",
+    "season": "Summer",
+    "style": "Business Formal",
+    "top": "Crisp Button-Down Oxford Shirt",
+    "bottom": "Pleated formal trousers",
+    "shoes": "Tan suede loafers",
+    "accessory": "Leather belt & minimalist watch",
+    "colours": [
+      "White",
+      "Sky Blue",
+      "Light Grey"
+    ],
+    "tip": "Roll the sleeves to the forearm for business-casual meetings or smart dining.",
+    "emoji": "\ud83d\udc54",
+    "image": "/dataset/Kemeja/0a77dbed-06fb-4ba7-b1e3-24f3a41498bc.jpg",
+    "source": "kaggle_clothes_dataset"
+  },
+  {
+    "id": 59,
+    "name": "Classic Piqu\u00e9 Cotton Polo #1",
+    "occasion": "Casual",
+    "season": "Summer",
+    "style": "Smart Casual",
+    "top": "Classic Piqu\u00e9 Cotton Polo",
+    "bottom": "Beige flat-front chinos",
+    "shoes": "Slip-on leather sneakers",
+    "accessory": "Sports watch & aviator shades",
+    "colours": [
+      "Navy",
+      "White",
+      "Olive"
+    ],
+    "tip": "Combines athletic breathability with collar elegance. Pair with tailored shorts or chinos.",
+    "emoji": "\ud83d\udc55",
+    "image": "/dataset/Polo/001068a8-86c3-4029-a9d9-1e27015e7e64.jpg",
+    "source": "kaggle_clothes_dataset"
+  },
+  {
+    "id": 60,
+    "name": "Classic Piqu\u00e9 Cotton Polo #2",
+    "occasion": "Sports",
+    "season": "Spring/Autumn",
+    "style": "Sporty",
+    "top": "Classic Piqu\u00e9 Cotton Polo",
+    "bottom": "Beige flat-front chinos",
+    "shoes": "Slip-on leather sneakers",
+    "accessory": "Sports watch & aviator shades",
+    "colours": [
+      "Navy",
+      "White",
+      "Olive"
+    ],
+    "tip": "Combines athletic breathability with collar elegance. Pair with tailored shorts or chinos.",
+    "emoji": "\ud83d\udc55",
+    "image": "/dataset/Polo/0433a5db-ac05-46a9-8ef0-4424334a6fbf.jpg",
+    "source": "kaggle_clothes_dataset"
+  },
+  {
+    "id": 61,
+    "name": "Classic Piqu\u00e9 Cotton Polo #3",
+    "occasion": "Casual",
+    "season": "Summer",
+    "style": "Smart Casual",
+    "top": "Classic Piqu\u00e9 Cotton Polo",
+    "bottom": "Beige flat-front chinos",
+    "shoes": "Slip-on leather sneakers",
+    "accessory": "Sports watch & aviator shades",
+    "colours": [
+      "Navy",
+      "White",
+      "Olive"
+    ],
+    "tip": "Combines athletic breathability with collar elegance. Pair with tailored shorts or chinos.",
+    "emoji": "\ud83d\udc55",
+    "image": "/dataset/Polo/046c5c17-e506-4104-b762-9722b0769db8.jpg",
+    "source": "kaggle_clothes_dataset"
+  },
+  {
+    "id": 62,
+    "name": "Ribbed Knit Woollen Sweater #1",
+    "occasion": "Casual",
+    "season": "Winter",
+    "style": "Smart Casual",
+    "top": "Ribbed Knit Woollen Sweater",
+    "bottom": "Dark selvedge denim jeans",
+    "shoes": "Chelsea leather boots",
+    "accessory": "Plaid woollen scarf",
+    "colours": [
+      "Camel",
+      "Cream",
+      "Burgundy"
+    ],
+    "tip": "Layer over a collared shirt for a preppy, insulating winter aesthetic.",
+    "emoji": "\ud83e\udde3",
+    "image": "/dataset/Sweter/00588f87-cda1-46d7-93be-71f0fa889895.jpg",
+    "source": "kaggle_clothes_dataset"
+  },
+  {
+    "id": 63,
+    "name": "Ribbed Knit Woollen Sweater #2",
+    "occasion": "Party",
+    "season": "Winter",
+    "style": "Bohemian",
+    "top": "Ribbed Knit Woollen Sweater",
+    "bottom": "Dark selvedge denim jeans",
+    "shoes": "Chelsea leather boots",
+    "accessory": "Plaid woollen scarf",
+    "colours": [
+      "Camel",
+      "Cream",
+      "Burgundy"
+    ],
+    "tip": "Layer over a collared shirt for a preppy, insulating winter aesthetic.",
+    "emoji": "\ud83e\udde3",
+    "image": "/dataset/Sweter/0098b1c0-bd39-41c2-a172-17066bc9fd26.jpg",
+    "source": "kaggle_clothes_dataset"
+  },
+  {
+    "id": 64,
+    "name": "Ribbed Knit Woollen Sweater #3",
+    "occasion": "Casual",
+    "season": "Winter",
+    "style": "Smart Casual",
+    "top": "Ribbed Knit Woollen Sweater",
+    "bottom": "Dark selvedge denim jeans",
+    "shoes": "Chelsea leather boots",
+    "accessory": "Plaid woollen scarf",
+    "colours": [
+      "Camel",
+      "Cream",
+      "Burgundy"
+    ],
+    "tip": "Layer over a collared shirt for a preppy, insulating winter aesthetic.",
+    "emoji": "\ud83e\udde3",
+    "image": "/dataset/Sweter/0142c777-baf8-4500-add9-6641b95b90ec.jpg",
+    "source": "kaggle_clothes_dataset"
+  },
+  {
+    "id": 65,
+    "name": "Contemporary Elegant Dress #1",
+    "occasion": "Party",
+    "season": "Summer",
+    "style": "Bohemian",
+    "top": "Contemporary Elegant Dress",
+    "bottom": "Flowy hemline silhouette",
+    "shoes": "Strappy heel sandals",
+    "accessory": "Pendant earrings & clutch",
+    "colours": [
+      "Coral",
+      "Mustard",
+      "Peach"
+    ],
+    "tip": "Flowy and expressive. Accentuate with metallic jewelry and delicate sandals.",
+    "emoji": "\ud83d\udc57",
+    "image": "/dataset/Gaun/08868e1e-e19a-43de-b883-82694af5a482.jpg",
+    "source": "kaggle_clothes_dataset"
+  },
+  {
+    "id": 66,
+    "name": "Contemporary Elegant Dress #2",
+    "occasion": "Traditional",
+    "season": "Spring/Autumn",
+    "style": "Ethnic",
+    "top": "Contemporary Elegant Dress",
+    "bottom": "Flowy hemline silhouette",
+    "shoes": "Strappy heel sandals",
+    "accessory": "Pendant earrings & clutch",
+    "colours": [
+      "Coral",
+      "Mustard",
+      "Peach"
+    ],
+    "tip": "Flowy and expressive. Accentuate with metallic jewelry and delicate sandals.",
+    "emoji": "\ud83d\udc57",
+    "image": "/dataset/Gaun/16740066-3329-4165-884a-25c42814d590.jpg",
+    "source": "kaggle_clothes_dataset"
+  },
+  {
+    "id": 67,
+    "name": "Contemporary Elegant Dress #3",
+    "occasion": "Party",
+    "season": "Summer",
+    "style": "Bohemian",
+    "top": "Contemporary Elegant Dress",
+    "bottom": "Flowy hemline silhouette",
+    "shoes": "Strappy heel sandals",
+    "accessory": "Pendant earrings & clutch",
+    "colours": [
+      "Coral",
+      "Mustard",
+      "Peach"
+    ],
+    "tip": "Flowy and expressive. Accentuate with metallic jewelry and delicate sandals.",
+    "emoji": "\ud83d\udc57",
+    "image": "/dataset/Gaun/18519bfc-435f-4280-8779-f7fad8fe9e79.jpg",
+    "source": "kaggle_clothes_dataset"
+  },
+  {
+    "id": 68,
+    "name": "High-Performance Track Jacket #1",
+    "occasion": "Sports",
+    "season": "Monsoon",
+    "style": "Sporty",
+    "top": "High-Performance Track Jacket",
+    "bottom": "Tapered athletic track pants",
+    "shoes": "Cushioned running shoes",
+    "accessory": "Waterproof fitness tracker",
+    "colours": [
+      "Electric Blue",
+      "Black",
+      "Grey"
+    ],
+    "tip": "Moisture-wicking construction designed for active training or rainy trail runs.",
+    "emoji": "\ud83c\udfc3",
+    "image": "/dataset/Jaket_Olahraga/21c78c7e-a927-49ea-94d4-9ceeaa847bb2.jpg",
+    "source": "kaggle_clothes_dataset"
+  },
+  {
+    "id": 69,
+    "name": "High-Performance Track Jacket #2",
+    "occasion": "Casual",
+    "season": "Winter",
+    "style": "Sporty",
+    "top": "High-Performance Track Jacket",
+    "bottom": "Tapered athletic track pants",
+    "shoes": "Cushioned running shoes",
+    "accessory": "Waterproof fitness tracker",
+    "colours": [
+      "Electric Blue",
+      "Black",
+      "Grey"
+    ],
+    "tip": "Moisture-wicking construction designed for active training or rainy trail runs.",
+    "emoji": "\ud83c\udfc3",
+    "image": "/dataset/Jaket_Olahraga/26f2adb4-d948-4693-a16d-d7e2e998e464.jpg",
+    "source": "kaggle_clothes_dataset"
+  },
+  {
+    "id": 70,
+    "name": "High-Performance Track Jacket #3",
+    "occasion": "Sports",
+    "season": "Monsoon",
+    "style": "Sporty",
+    "top": "High-Performance Track Jacket",
+    "bottom": "Tapered athletic track pants",
+    "shoes": "Cushioned running shoes",
+    "accessory": "Waterproof fitness tracker",
+    "colours": [
+      "Electric Blue",
+      "Black",
+      "Grey"
+    ],
+    "tip": "Moisture-wicking construction designed for active training or rainy trail runs.",
+    "emoji": "\ud83c\udfc3",
+    "image": "/dataset/Jaket_Olahraga/34abdd98-d79c-41cc-b54f-9d1da573c1ce.jpg",
+    "source": "kaggle_clothes_dataset"
+  },
+  {
+    "id": 71,
+    "name": "Heavyweight Winter Overcoat #1",
+    "occasion": "Formal",
+    "season": "Winter",
+    "style": "Business Formal",
+    "top": "Heavyweight Winter Overcoat",
+    "bottom": "Wool-blend dress trousers",
+    "shoes": "Brogue dress shoes",
+    "accessory": "Cashmere scarf & leather gloves",
+    "colours": [
+      "Camel",
+      "Charcoal",
+      "Black"
+    ],
+    "tip": "The ultimate statement layer. Wear open over a tailored suit or chunky knit.",
+    "emoji": "\ud83e\udde5",
+    "image": "/dataset/Mantel/coatblazer_wanita_1696688614_ca361fce_progressive_thumbnail.jpg",
+    "source": "kaggle_clothes_dataset"
+  },
+  {
+    "id": 72,
+    "name": "Heavyweight Winter Overcoat #2",
+    "occasion": "Party",
+    "season": "Winter",
+    "style": "Smart Casual",
+    "top": "Heavyweight Winter Overcoat",
+    "bottom": "Wool-blend dress trousers",
+    "shoes": "Brogue dress shoes",
+    "accessory": "Cashmere scarf & leather gloves",
+    "colours": [
+      "Camel",
+      "Charcoal",
+      "Black"
+    ],
+    "tip": "The ultimate statement layer. Wear open over a tailored suit or chunky knit.",
+    "emoji": "\ud83e\udde5",
+    "image": "/dataset/Mantel/coatjaket_parka_1692414044_29cbbac9_progressive_thumbnail.jpg",
+    "source": "kaggle_clothes_dataset"
+  },
+  {
+    "id": 73,
+    "name": "Heavyweight Winter Overcoat #3",
+    "occasion": "Formal",
+    "season": "Winter",
+    "style": "Business Formal",
+    "top": "Heavyweight Winter Overcoat",
+    "bottom": "Wool-blend dress trousers",
+    "shoes": "Brogue dress shoes",
+    "accessory": "Cashmere scarf & leather gloves",
+    "colours": [
+      "Camel",
+      "Charcoal",
+      "Black"
+    ],
+    "tip": "The ultimate statement layer. Wear open over a tailored suit or chunky knit.",
+    "emoji": "\ud83e\udde5",
+    "image": "/dataset/Mantel/coatlong_blazer_coklat_muda_1696048062_10d81c49_progressive_thumbnail.jpg",
+    "source": "kaggle_clothes_dataset"
+  }
+]

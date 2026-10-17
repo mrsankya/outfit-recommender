@@ -1,0 +1,662 @@
+[
+  {
+    "id": 75,
+    "name": "Mens Casual Premium Slim Fit T-Shirts ",
+    "occasion": "Casual",
+    "season": "Spring/Autumn",
+    "style": "Streetwear",
+    "top": "Mens Casual Premium Slim Fit T-Shirts ",
+    "bottom": "Cargo Pants",
+    "shoes": "High-Top Sneakers",
+    "accessory": "Snapback Cap",
+    "colours": [
+      "Black",
+      "White",
+      "Olive"
+    ],
+    "tip": "Keep the silhouette relaxed and accessories minimal.",
+    "emoji": "\ud83d\udc55",
+    "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_t.png",
+    "source": "FakeStore Fashion Dataset"
+  },
+  {
+    "id": 76,
+    "name": "Mens Cotton Jacket",
+    "occasion": "Formal",
+    "season": "Winter",
+    "style": "Business Formal",
+    "top": "Mens Cotton Jacket",
+    "bottom": "Dress Trousers",
+    "shoes": "Oxford Shoes",
+    "accessory": "Leather Folio",
+    "colours": [
+      "Black",
+      "Grey",
+      "Navy"
+    ],
+    "tip": "A timeless winter workwear silhouette that sharpens any morning routine.",
+    "emoji": "\ud83e\udde5",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_t.png",
+    "source": "FakeStore Fashion Dataset"
+  },
+  {
+    "id": 77,
+    "name": "Mens Casual Slim Fit",
+    "occasion": "Casual",
+    "season": "Summer",
+    "style": "Smart Casual",
+    "top": "Mens Casual Slim Fit",
+    "bottom": "Beige Chinos",
+    "shoes": "White Sneakers",
+    "accessory": "Stainless Steel Watch",
+    "colours": [
+      "Light Blue",
+      "Beige",
+      "Tan"
+    ],
+    "tip": "Roll the cuffs twice for an effortless weekend vibe.",
+    "emoji": "\ud83d\udc54",
+    "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_t.png",
+    "source": "FakeStore Fashion Dataset"
+  },
+  {
+    "id": 78,
+    "name": "BIYLACLESEN Women's 3-in-1 Snowboard Jacket W",
+    "occasion": "Party",
+    "season": "Summer",
+    "style": "Bohemian",
+    "top": "BIYLACLESEN Women's 3-in-1 Snowboard Jacket W",
+    "bottom": "Flared Trousers",
+    "shoes": "Ankle Boots",
+    "accessory": "Crossbody Bag",
+    "colours": [
+      "Red",
+      "Black",
+      "Gold"
+    ],
+    "tip": "The biker jacket adds instant attitude to delicate florals.",
+    "emoji": "\ud83e\udde5",
+    "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_t.png",
+    "source": "FakeStore Fashion Dataset"
+  },
+  {
+    "id": 79,
+    "name": "Lock and Love Women's Removable Hooded Faux L",
+    "occasion": "Casual",
+    "season": "Spring/Autumn",
+    "style": "Smart Casual",
+    "top": "Lock and Love Women's Removable Hooded Faux L",
+    "bottom": "Track Joggers",
+    "shoes": "Running Shoes",
+    "accessory": "Sports Cap",
+    "colours": [
+      "Purple",
+      "Black",
+      "White"
+    ],
+    "tip": "Lightweight weather-resistant jacket perfect for brisk morning walks.",
+    "emoji": "\ud83e\udde2",
+    "image": "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_t.png",
+    "source": "FakeStore Fashion Dataset"
+  },
+  {
+    "id": 80,
+    "name": "Rain Jacket Women Windbreaker Striped Climbin",
+    "occasion": "Formal",
+    "season": "Summer",
+    "style": "Business Formal",
+    "top": "Rain Jacket Women Windbreaker Striped Climbin",
+    "bottom": "Tailored Skirt",
+    "shoes": "Kitten Heels",
+    "accessory": "Minimalist Necklace",
+    "colours": [
+      "White",
+      "Navy",
+      "Silver"
+    ],
+    "tip": "Clean, breathy workwear staple for warmer office months.",
+    "emoji": "\ud83e\udde5",
+    "image": "https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2t.png",
+    "source": "FakeStore Fashion Dataset"
+  },
+  {
+    "id": 81,
+    "name": "MBJ Women's Solid Short Sleeve Boat Neck V ",
+    "occasion": "Party",
+    "season": "Winter",
+    "style": "Smart Casual",
+    "top": "MBJ Women's Solid Short Sleeve Boat Neck",
+    "bottom": "Wide-Leg Pants",
+    "shoes": "Strappy Heels",
+    "accessory": "Gold Clutch",
+    "colours": [
+      "Burgundy",
+      "Black",
+      "Gold"
+    ],
+    "tip": "Velvet delivers a rich evening texture without needing heavy jewellery.",
+    "emoji": "\ud83c\udf89",
+    "image": "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_t.png",
+    "source": "FakeStore Fashion Dataset"
+  },
+  {
+    "id": 82,
+    "name": "Opna Women's Short Sleeve Moisture",
+    "occasion": "Casual",
+    "season": "Summer",
+    "style": "Streetwear",
+    "top": "Opna Women's Short Sleeve Moisture",
+    "bottom": "Denim Shorts",
+    "shoes": "Canvas Slides",
+    "accessory": "Tote Bag",
+    "colours": [
+      "Beige",
+      "White",
+      "Tan"
+    ],
+    "tip": "Lightweight breathable cotton makes high summer comfortable.",
+    "emoji": "\u2600\ufe0f",
+    "image": "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_t.png",
+    "source": "FakeStore Fashion Dataset"
+  },
+  {
+    "id": 83,
+    "name": "DANVOUY Womens T Shirt Casual Cotton Short",
+    "occasion": "Casual",
+    "season": "Monsoon",
+    "style": "Sporty",
+    "top": "DANVOUY Womens T Shirt Casual Cotton Short",
+    "bottom": "Water-Resistant Chinos",
+    "shoes": "Rubber Loafers",
+    "accessory": "Compact Umbrella",
+    "colours": [
+      "Forest Green",
+      "Black",
+      "Grey"
+    ],
+    "tip": "Quick-drying outer shell prevents water absorption during seasonal rains.",
+    "emoji": "\ud83d\udc54",
+    "image": "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_t.png",
+    "source": "FakeStore Fashion Dataset"
+  },
+  {
+    "id": 84,
+    "name": "Blue & Black Check Shirt",
+    "occasion": "Formal",
+    "season": "Summer",
+    "style": "Business Formal",
+    "top": "Blue & Black Check Shirt",
+    "bottom": "Formal trousers",
+    "shoes": "Brogue shoes",
+    "accessory": "Leather belt",
+    "colours": [
+      "Blue",
+      "White",
+      "Charcoal"
+    ],
+    "tip": "Crisp structure ensures a reliable sharp profile throughout long meetings.",
+    "emoji": "\ud83d\udc54",
+    "image": "https://cdn.dummyjson.com/product-images/mens-shirts/blue-&-black-check-shirt/thumbnail.webp",
+    "source": "DummyJSON Global Fashion API"
+  },
+  {
+    "id": 85,
+    "name": "Gigabyte Aorus Men Tshirt",
+    "occasion": "Formal",
+    "season": "Summer",
+    "style": "Business Formal",
+    "top": "Gigabyte Aorus Men Tshirt",
+    "bottom": "Formal trousers",
+    "shoes": "Brogue shoes",
+    "accessory": "Leather belt",
+    "colours": [
+      "Blue",
+      "White",
+      "Charcoal"
+    ],
+    "tip": "Crisp structure ensures a reliable sharp profile throughout long meetings.",
+    "emoji": "\ud83d\udc55",
+    "image": "https://cdn.dummyjson.com/product-images/mens-shirts/gigabyte-aorus-men-tshirt/thumbnail.webp",
+    "source": "DummyJSON Global Fashion API"
+  },
+  {
+    "id": 86,
+    "name": "Man Plaid Shirt",
+    "occasion": "Formal",
+    "season": "Summer",
+    "style": "Business Formal",
+    "top": "Man Plaid Shirt",
+    "bottom": "Formal trousers",
+    "shoes": "Brogue shoes",
+    "accessory": "Leather belt",
+    "colours": [
+      "Blue",
+      "White",
+      "Charcoal"
+    ],
+    "tip": "Crisp structure ensures a reliable sharp profile throughout long meetings.",
+    "emoji": "\ud83d\udc54",
+    "image": "https://cdn.dummyjson.com/product-images/mens-shirts/man-plaid-shirt/thumbnail.webp",
+    "source": "DummyJSON Global Fashion API"
+  },
+  {
+    "id": 87,
+    "name": "Man Short Sleeve Shirt",
+    "occasion": "Formal",
+    "season": "Summer",
+    "style": "Business Formal",
+    "top": "Man Short Sleeve Shirt",
+    "bottom": "Formal trousers",
+    "shoes": "Brogue shoes",
+    "accessory": "Leather belt",
+    "colours": [
+      "Blue",
+      "White",
+      "Charcoal"
+    ],
+    "tip": "Crisp structure ensures a reliable sharp profile throughout long meetings.",
+    "emoji": "\ud83d\udc54",
+    "image": "https://cdn.dummyjson.com/product-images/mens-shirts/man-short-sleeve-shirt/thumbnail.webp",
+    "source": "DummyJSON Global Fashion API"
+  },
+  {
+    "id": 88,
+    "name": "Men Check Shirt",
+    "occasion": "Formal",
+    "season": "Summer",
+    "style": "Business Formal",
+    "top": "Men Check Shirt",
+    "bottom": "Formal trousers",
+    "shoes": "Brogue shoes",
+    "accessory": "Leather belt",
+    "colours": [
+      "Blue",
+      "White",
+      "Charcoal"
+    ],
+    "tip": "Crisp structure ensures a reliable sharp profile throughout long meetings.",
+    "emoji": "\ud83d\udc54",
+    "image": "https://cdn.dummyjson.com/product-images/mens-shirts/men-check-shirt/thumbnail.webp",
+    "source": "DummyJSON Global Fashion API"
+  },
+  {
+    "id": 89,
+    "name": "Black Women's Gown",
+    "occasion": "Party",
+    "season": "Spring/Autumn",
+    "style": "Bohemian",
+    "top": "Black Women's Gown",
+    "bottom": "Matching wrap",
+    "shoes": "Block heels",
+    "accessory": "Beaded earrings",
+    "colours": [
+      "Emerald",
+      "Gold",
+      "Cream"
+    ],
+    "tip": "A versatile day-to-night one-piece silhouette for celebratory dinners.",
+    "emoji": "\ud83d\udc57",
+    "image": "https://cdn.dummyjson.com/product-images/womens-dresses/black-women's-gown/thumbnail.webp",
+    "source": "DummyJSON Global Fashion API"
+  },
+  {
+    "id": 90,
+    "name": "Corset Leather With Skirt",
+    "occasion": "Party",
+    "season": "Spring/Autumn",
+    "style": "Bohemian",
+    "top": "Corset Leather With Skirt",
+    "bottom": "Matching wrap",
+    "shoes": "Block heels",
+    "accessory": "Beaded earrings",
+    "colours": [
+      "Emerald",
+      "Gold",
+      "Cream"
+    ],
+    "tip": "A versatile day-to-night one-piece silhouette for celebratory dinners.",
+    "emoji": "\ud83d\udc57",
+    "image": "https://cdn.dummyjson.com/product-images/womens-dresses/corset-leather-with-skirt/thumbnail.webp",
+    "source": "DummyJSON Global Fashion API"
+  },
+  {
+    "id": 91,
+    "name": "Corset With Black Skirt",
+    "occasion": "Party",
+    "season": "Spring/Autumn",
+    "style": "Bohemian",
+    "top": "Corset With Black Skirt",
+    "bottom": "Matching wrap",
+    "shoes": "Block heels",
+    "accessory": "Beaded earrings",
+    "colours": [
+      "Emerald",
+      "Gold",
+      "Cream"
+    ],
+    "tip": "A versatile day-to-night one-piece silhouette for celebratory dinners.",
+    "emoji": "\ud83d\udc57",
+    "image": "https://cdn.dummyjson.com/product-images/womens-dresses/corset-with-black-skirt/thumbnail.webp",
+    "source": "DummyJSON Global Fashion API"
+  },
+  {
+    "id": 92,
+    "name": "Dress Pea",
+    "occasion": "Party",
+    "season": "Spring/Autumn",
+    "style": "Bohemian",
+    "top": "Dress Pea",
+    "bottom": "Matching wrap",
+    "shoes": "Block heels",
+    "accessory": "Beaded earrings",
+    "colours": [
+      "Emerald",
+      "Gold",
+      "Cream"
+    ],
+    "tip": "A versatile day-to-night one-piece silhouette for celebratory dinners.",
+    "emoji": "\ud83d\udc57",
+    "image": "https://cdn.dummyjson.com/product-images/womens-dresses/dress-pea/thumbnail.webp",
+    "source": "DummyJSON Global Fashion API"
+  },
+  {
+    "id": 93,
+    "name": "Marni Red & Black Suit",
+    "occasion": "Party",
+    "season": "Spring/Autumn",
+    "style": "Bohemian",
+    "top": "Marni Red & Black Suit",
+    "bottom": "Matching wrap",
+    "shoes": "Block heels",
+    "accessory": "Beaded earrings",
+    "colours": [
+      "Emerald",
+      "Gold",
+      "Cream"
+    ],
+    "tip": "A versatile day-to-night one-piece silhouette for celebratory dinners.",
+    "emoji": "\ud83d\udc57",
+    "image": "https://cdn.dummyjson.com/product-images/womens-dresses/marni-red-&-black-suit/thumbnail.webp",
+    "source": "DummyJSON Global Fashion API"
+  },
+  {
+    "id": 94,
+    "name": "Blue Frock",
+    "occasion": "Casual",
+    "season": "Summer",
+    "style": "Smart Casual",
+    "top": "Blue Frock",
+    "bottom": "Pleated trousers",
+    "shoes": "Leather sandals",
+    "accessory": "Woven tote bag",
+    "colours": [
+      "Pastel Pink",
+      "White",
+      "Tan"
+    ],
+    "tip": "Soft drape complements structured trousers for breezy weekend cafe looks.",
+    "emoji": "\ud83d\udc57",
+    "image": "https://cdn.dummyjson.com/product-images/tops/blue-frock/thumbnail.webp",
+    "source": "DummyJSON Global Fashion API"
+  },
+  {
+    "id": 95,
+    "name": "Girl Summer Dress",
+    "occasion": "Casual",
+    "season": "Summer",
+    "style": "Smart Casual",
+    "top": "Girl Summer Dress",
+    "bottom": "Pleated trousers",
+    "shoes": "Leather sandals",
+    "accessory": "Woven tote bag",
+    "colours": [
+      "Pastel Pink",
+      "White",
+      "Tan"
+    ],
+    "tip": "Soft drape complements structured trousers for breezy weekend cafe looks.",
+    "emoji": "\ud83d\udc57",
+    "image": "https://cdn.dummyjson.com/product-images/tops/girl-summer-dress/thumbnail.webp",
+    "source": "DummyJSON Global Fashion API"
+  },
+  {
+    "id": 96,
+    "name": "Gray Dress",
+    "occasion": "Casual",
+    "season": "Summer",
+    "style": "Smart Casual",
+    "top": "Gray Dress",
+    "bottom": "Pleated trousers",
+    "shoes": "Leather sandals",
+    "accessory": "Woven tote bag",
+    "colours": [
+      "Pastel Pink",
+      "White",
+      "Tan"
+    ],
+    "tip": "Soft drape complements structured trousers for breezy weekend cafe looks.",
+    "emoji": "\ud83d\udc57",
+    "image": "https://cdn.dummyjson.com/product-images/tops/gray-dress/thumbnail.webp",
+    "source": "DummyJSON Global Fashion API"
+  },
+  {
+    "id": 97,
+    "name": "Short Frock",
+    "occasion": "Casual",
+    "season": "Summer",
+    "style": "Smart Casual",
+    "top": "Short Frock",
+    "bottom": "Pleated trousers",
+    "shoes": "Leather sandals",
+    "accessory": "Woven tote bag",
+    "colours": [
+      "Pastel Pink",
+      "White",
+      "Tan"
+    ],
+    "tip": "Soft drape complements structured trousers for breezy weekend cafe looks.",
+    "emoji": "\ud83d\udc57",
+    "image": "https://cdn.dummyjson.com/product-images/tops/short-frock/thumbnail.webp",
+    "source": "DummyJSON Global Fashion API"
+  },
+  {
+    "id": 98,
+    "name": "Tartan Dress",
+    "occasion": "Casual",
+    "season": "Summer",
+    "style": "Smart Casual",
+    "top": "Tartan Dress",
+    "bottom": "Pleated trousers",
+    "shoes": "Leather sandals",
+    "accessory": "Woven tote bag",
+    "colours": [
+      "Pastel Pink",
+      "White",
+      "Tan"
+    ],
+    "tip": "Soft drape complements structured trousers for breezy weekend cafe looks.",
+    "emoji": "\ud83d\udc57",
+    "image": "https://cdn.dummyjson.com/product-images/tops/tartan-dress/thumbnail.webp",
+    "source": "DummyJSON Global Fashion API"
+  },
+  {
+    "id": 99,
+    "name": "Nike Air Jordan 1 Red And Black",
+    "occasion": "Casual",
+    "season": "Spring/Autumn",
+    "style": "Streetwear",
+    "top": "Casual Graphic Sweatshirt",
+    "bottom": "Dark raw denim",
+    "shoes": "Nike Air Jordan 1 Red And Black",
+    "accessory": "Canvas backpack",
+    "colours": [
+      "Navy",
+      "White",
+      "Black"
+    ],
+    "tip": "Clean footwear anchors the outfit and establishes your personal street style.",
+    "emoji": "\ud83d\udc5f",
+    "image": "https://cdn.dummyjson.com/product-images/mens-shoes/nike-air-jordan-1-red-and-black/thumbnail.webp",
+    "source": "DummyJSON Global Fashion API"
+  },
+  {
+    "id": 100,
+    "name": "Nike Baseball Cleats",
+    "occasion": "Casual",
+    "season": "Spring/Autumn",
+    "style": "Streetwear",
+    "top": "Casual Graphic Sweatshirt",
+    "bottom": "Dark raw denim",
+    "shoes": "Nike Baseball Cleats",
+    "accessory": "Canvas backpack",
+    "colours": [
+      "Navy",
+      "White",
+      "Black"
+    ],
+    "tip": "Clean footwear anchors the outfit and establishes your personal street style.",
+    "emoji": "\ud83d\udc5f",
+    "image": "https://cdn.dummyjson.com/product-images/mens-shoes/nike-baseball-cleats/thumbnail.webp",
+    "source": "DummyJSON Global Fashion API"
+  },
+  {
+    "id": 101,
+    "name": "Puma Future Rider Trainers",
+    "occasion": "Casual",
+    "season": "Spring/Autumn",
+    "style": "Streetwear",
+    "top": "Casual Graphic Sweatshirt",
+    "bottom": "Dark raw denim",
+    "shoes": "Puma Future Rider Trainers",
+    "accessory": "Canvas backpack",
+    "colours": [
+      "Navy",
+      "White",
+      "Black"
+    ],
+    "tip": "Clean footwear anchors the outfit and establishes your personal street style.",
+    "emoji": "\ud83d\udc5f",
+    "image": "https://cdn.dummyjson.com/product-images/mens-shoes/puma-future-rider-trainers/thumbnail.webp",
+    "source": "DummyJSON Global Fashion API"
+  },
+  {
+    "id": 102,
+    "name": "Sports Sneakers Off White & Red",
+    "occasion": "Casual",
+    "season": "Spring/Autumn",
+    "style": "Streetwear",
+    "top": "Casual Graphic Sweatshirt",
+    "bottom": "Dark raw denim",
+    "shoes": "Sports Sneakers Off White & Red",
+    "accessory": "Canvas backpack",
+    "colours": [
+      "Navy",
+      "White",
+      "Black"
+    ],
+    "tip": "Clean footwear anchors the outfit and establishes your personal street style.",
+    "emoji": "\ud83d\udc5f",
+    "image": "https://cdn.dummyjson.com/product-images/mens-shoes/sports-sneakers-off-white-&-red/thumbnail.webp",
+    "source": "DummyJSON Global Fashion API"
+  },
+  {
+    "id": 103,
+    "name": "Sports Sneakers Off White Red",
+    "occasion": "Casual",
+    "season": "Spring/Autumn",
+    "style": "Streetwear",
+    "top": "Casual Graphic Sweatshirt",
+    "bottom": "Dark raw denim",
+    "shoes": "Sports Sneakers Off White Red",
+    "accessory": "Canvas backpack",
+    "colours": [
+      "Navy",
+      "White",
+      "Black"
+    ],
+    "tip": "Clean footwear anchors the outfit and establishes your personal street style.",
+    "emoji": "\ud83d\udc5f",
+    "image": "https://cdn.dummyjson.com/product-images/mens-shoes/sports-sneakers-off-white-red/thumbnail.webp",
+    "source": "DummyJSON Global Fashion API"
+  },
+  {
+    "id": 105,
+    "name": "Calvin Klein Heel Shoes",
+    "occasion": "Formal",
+    "season": "Spring/Autumn",
+    "style": "Business Formal",
+    "top": "Tailored Silk Blouse",
+    "bottom": "Pencil skirt",
+    "shoes": "Calvin Klein Heel Shoes",
+    "accessory": "Structured handbag",
+    "colours": [
+      "Black",
+      "Nude",
+      "Silver"
+    ],
+    "tip": "Pointed pumps immediately elevate boardroom and presentation attire.",
+    "emoji": "\ud83d\udc60",
+    "image": "https://cdn.dummyjson.com/product-images/womens-shoes/calvin-klein-heel-shoes/thumbnail.webp",
+    "source": "DummyJSON Global Fashion API"
+  },
+  {
+    "id": 106,
+    "name": "Golden Shoes Woman",
+    "occasion": "Formal",
+    "season": "Spring/Autumn",
+    "style": "Business Formal",
+    "top": "Tailored Silk Blouse",
+    "bottom": "Pencil skirt",
+    "shoes": "Golden Shoes Woman",
+    "accessory": "Structured handbag",
+    "colours": [
+      "Black",
+      "Nude",
+      "Silver"
+    ],
+    "tip": "Pointed pumps immediately elevate boardroom and presentation attire.",
+    "emoji": "\ud83d\udc60",
+    "image": "https://cdn.dummyjson.com/product-images/womens-shoes/golden-shoes-woman/thumbnail.webp",
+    "source": "DummyJSON Global Fashion API"
+  },
+  {
+    "id": 107,
+    "name": "Pampi Shoes",
+    "occasion": "Formal",
+    "season": "Spring/Autumn",
+    "style": "Business Formal",
+    "top": "Tailored Silk Blouse",
+    "bottom": "Pencil skirt",
+    "shoes": "Pampi Shoes",
+    "accessory": "Structured handbag",
+    "colours": [
+      "Black",
+      "Nude",
+      "Silver"
+    ],
+    "tip": "Pointed pumps immediately elevate boardroom and presentation attire.",
+    "emoji": "\ud83d\udc60",
+    "image": "https://cdn.dummyjson.com/product-images/womens-shoes/pampi-shoes/thumbnail.webp",
+    "source": "DummyJSON Global Fashion API"
+  },
+  {
+    "id": 108,
+    "name": "Red Shoes",
+    "occasion": "Formal",
+    "season": "Spring/Autumn",
+    "style": "Business Formal",
+    "top": "Tailored Silk Blouse",
+    "bottom": "Pencil skirt",
+    "shoes": "Red Shoes",
+    "accessory": "Structured handbag",
+    "colours": [
+      "Black",
+      "Nude",
+      "Silver"
+    ],
+    "tip": "Pointed pumps immediately elevate boardroom and presentation attire.",
+    "emoji": "\ud83d\udc60",
+    "image": "https://cdn.dummyjson.com/product-images/womens-shoes/red-shoes/thumbnail.webp",
+    "source": "DummyJSON Global Fashion API"
+  }
+]

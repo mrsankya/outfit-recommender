@@ -1,0 +1,460 @@
+/* src/components/ClothingRack/ClothingRack.css */
+/* ──────────────────────────────────────────────────────────────────────────
+   "On The Rail" — full port of the Joonsite section CSS into scoped classes
+   All values match the Liquid template's defaults.
+   ────────────────────────────────────────────────────────────────────────── */
+
+/* ── Section wrapper ──────────────────────────────────────────────────── */
+.rk-sec {
+  background: var(--bg-soft);
+  color: var(--text-primary);
+  padding: 40px 0 56px;
+  position: relative;
+}
+
+.rk-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+/* ── Rail caption (top label) ─────────────────────────────────────────── */
+.rk-railcap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 26px;
+  color: var(--text-primary);
+}
+.rk-railcap-sep {
+  width: 1px;
+  height: 14px;
+  background: rgba(0, 0, 0, 0.25);
+}
+[data-theme="dark"] .rk-railcap-sep { background: rgba(255,255,255,0.25); }
+.rk-railcap-dim { opacity: 0.45; }
+
+/* ── Stage (rod + rack) ───────────────────────────────────────────────── */
+.rk-stage {
+  position: relative;
+  padding-top: 14px;
+}
+
+.rk-rod {
+  position: absolute;
+  top: 15px;
+  left: calc(50% - 50vw);
+  right: calc(50% - 50vw);
+  height: 5px;
+  background: none;
+}
+.rk-rod-photo {
+  position: absolute;
+  left: 0; right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 26px;
+  object-fit: fill;
+  filter: drop-shadow(0 2px 3px rgba(0,0,0,.18));
+}
+
+/* ── Rack row ─────────────────────────────────────────────────────────── */
+.rk-rack {
+  --rk-h: 170px;  /* mobile default; JS / media query overrides */
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+  padding-top: 3px;
+  min-height: calc(var(--rk-h) + 60px);
+  overflow-x: auto;
+  overflow-y: visible;
+  touch-action: pan-y pinch-zoom;
+  overscroll-behavior-x: contain;
+  overscroll-behavior-y: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.rk-rack::-webkit-scrollbar { display: none; }
+
+@media (min-width: 750px) {
+  .rk-rack {
+    --rk-h: 300px;
+    overflow: visible;
+  }
+}
+
+/* ── Item ─────────────────────────────────────────────────────────────── */
+.rk-item {
+  --rk-p: 0;
+  flex: 0 0 auto;
+  flex-shrink: 0;
+  width: calc(var(--rk-h) * 0.33);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  transition:
+    width 650ms cubic-bezier(.25,.46,.45,.94),
+    margin 650ms cubic-bezier(.25,.46,.45,.94);
+}
+.rk-item.rk-live {
+  z-index: 5;
+  margin-left: 18px;
+  margin-right: 18px;
+}
+
+/* ── Garment ──────────────────────────────────────────────────────────── */
+.rk-garment {
+  position: relative;
+  width: 100%;
+  height: var(--rk-h);
+  transform-origin: 50% 0;
+  will-change: transform;
+  margin-top: calc(var(--rk-h) * -0.012);
+}
+
+.rk-view {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  will-change: opacity, transform;
+  transform-origin: 50% 0;
+}
+.rk-view img {
+  height: 100%;
+  width: auto;
+  max-width: none;
+  filter: drop-shadow(0 8px 10px rgba(0,0,0,.13));
+}
+
+/* ── Caption ──────────────────────────────────────────────────────────── */
+.rk-caption {
+  text-align: center;
+  margin-top: 26px;
+}
+.rk-cap-name {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: .3px;
+  min-height: 22px;
+  transition: opacity .18s ease;
+  color: var(--text-primary);
+}
+.rk-cap-name.rk-cap-swap { opacity: 0; }
+
+/* ── CTA buttons ──────────────────────────────────────────────────────── */
+.rk-cta-w {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+}
+.rk-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 26px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 30px;
+  transition:
+    background .2s ease,
+    color .2s ease,
+    border-color .2s ease,
+    transform .2s ease,
+    box-shadow .2s ease;
+}
+.rk-cta:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0,0,0,.14);
+}
+.rk-cta-primary {
+  background: var(--bg-soft);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+}
+.rk-cta-primary:hover {
+  background: var(--text-primary);
+  color: var(--bg);
+  border-color: var(--text-primary);
+}
+.rk-cta-secondary {
+  background: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+}
+.rk-cta-secondary:hover {
+  background: var(--text-primary);
+  color: var(--bg);
+  border-color: var(--text-primary);
+}
+
+/* ── Focus overlay ────────────────────────────────────────────────────── */
+.rk-focus {
+  position: fixed;
+  inset: 0;
+  z-index: 99998;
+  display: none;
+  background: var(--bg);
+  -webkit-backdrop-filter: blur(26px);
+  backdrop-filter: blur(26px);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .28s ease;
+}
+.rk-focus.rk-focus-open { display: flex; pointer-events: auto; }
+.rk-focus.rk-focus-in   { opacity: 1; }
+
+.rk-focus-close {
+  position: absolute;
+  top: 22px; right: 26px;
+  z-index: 20;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font-size: 13px;
+  color: var(--text-primary);
+  letter-spacing: .5px;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+.rk-x {
+  position: relative;
+  width: 18px; height: 18px;
+  display: block;
+}
+.rk-x::before,
+.rk-x::after {
+  content: '';
+  position: absolute;
+  left: 50%; top: 50%;
+  width: 18px; height: 2px;
+  background: var(--text-primary);
+  border-radius: 2px;
+}
+.rk-x::before { transform: translate(-50%,-50%) rotate(45deg); }
+.rk-x::after  { transform: translate(-50%,-50%) rotate(-45deg); }
+
+.rk-focus-stagewrap {
+  flex: 0 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+.rk-focus-stage {
+  position: relative;
+  --rk-h: min(64vh, 690px);
+  height: calc(var(--rk-h) * 1.02);
+  width: calc(var(--rk-h) * 1.0);
+  perspective: 1400px;
+  cursor: grab;
+  touch-action: pan-y;
+  -webkit-user-select: none;
+  user-select: none;
+  animation: rkPop .38s cubic-bezier(.22,.9,.3,1) both;
+}
+@keyframes rkPop {
+  from { transform: scale(.92); opacity: 0; }
+  to   { transform: scale(1);   opacity: 1; }
+}
+.rk-focus-stage.rk-dragging { cursor: grabbing; }
+.rk-focus-garment {
+  position: relative;
+  width: 100%; height: 100%;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+.rk-focus-stage img { -webkit-user-drag: none; }
+
+.rk-focus-meta {
+  text-align: center;
+  margin-top: 10px;
+  position: relative;
+  z-index: 2;
+}
+.rk-focus-idx   { font-size: 11px; letter-spacing: 2px; opacity: .45; margin-bottom: 8px; }
+.rk-focus-name  { font-size: 26px; font-weight: 600; letter-spacing: .5px; font-family: 'Playfair Display', serif; }
+.rk-focus-sub   { font-size: 13px; opacity: .55; margin-top: 4px; }
+.rk-focus-price { font-size: 16px; font-weight: 600; margin-top: 6px; }
+
+.rk-focus-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+  margin-top: 14px;
+}
+.rk-tab {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font-size: 13px;
+  letter-spacing: .5px;
+  color: var(--text-primary);
+  opacity: .45;
+  padding: 4px 2px 6px;
+  position: relative;
+  transition: opacity .2s ease;
+}
+.rk-tab::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0;
+  bottom: 0;
+  height: 2px;
+  background: var(--accent);
+  border-radius: 2px;
+  transform: scaleX(0);
+  transition: transform .25s ease;
+}
+.rk-tab.rk-tab-on         { opacity: 1; }
+.rk-tab.rk-tab-on::after  { transform: scaleX(1); }
+
+/* ── Focus action bar ─────────────────────────────────────────────────── */
+.rk-focus-action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+  margin: 7px auto 0;
+  padding-top: 16px;
+  max-width: min(560px, 88vw);
+  border-top: 1px solid var(--border);
+}
+.rk-focus-action-name {
+  flex: 1 1 auto;
+  min-width: 0;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: .2px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.rk-focus-action-btn {
+  flex: 0 0 auto;
+  display: inline-block;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: .3px;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  transition: opacity .2s ease;
+}
+.rk-focus-action-btn::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0;
+  bottom: -3px;
+  height: 1px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform .25s ease;
+}
+.rk-focus-action-btn:hover::after { transform: scaleX(1); }
+.rk-focus-action.rk-no-btn { justify-content: center; }
+.rk-focus-action.rk-no-btn .rk-focus-action-btn { display: none; }
+.rk-focus-action.rk-no-btn .rk-focus-action-name { text-align: center; }
+
+/* ── Mobile dots ──────────────────────────────────────────────────────── */
+.rk-dots {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  margin: 18px auto 0;
+  padding: 9px 16px;
+  width: max-content;
+  max-width: 88%;
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: 30px;
+  touch-action: none;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: grab;
+}
+.rk-dots.rk-dots-drag { cursor: grabbing; }
+.rk-dot {
+  width: 7px; height: 7px;
+  border-radius: 7px;
+  flex: 0 0 auto;
+  background: var(--border);
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  transition: width .3s ease, background .3s ease;
+}
+.rk-dot.rk-dot-on {
+  width: 26px;
+  background: var(--text-primary);
+}
+
+/* ── Mobile overrides ─────────────────────────────────────────────────── */
+@media (max-width: 599.98px) {
+  .rk-rack {
+    --rk-h: 230px;
+    justify-content: flex-start;
+    gap: 18px;
+    scroll-snap-type: x mandatory;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+  .rk-item { scroll-snap-align: center; }
+  .rk-dots { display: flex; }
+}
+
+@media (max-width: 749.98px) {
+  .rk-sec { padding: 26px 0 36px; }
+  .rk-rack { justify-content: flex-start; padding-left: 8px; padding-right: 8px; }
+  .rk-rack > .rk-item:first-child { margin-left: auto; }
+  .rk-rack > .rk-item:last-child  { margin-right: auto; }
+  .rk-railcap { flex-wrap: wrap; gap: 8px; font-size: 10px; letter-spacing: 1.4px; padding: 0 12px; text-align: center; margin-bottom: 18px; }
+  .rk-cap-name { font-size: 14px; padding: 0 14px; }
+  .rk-cta-w { gap: 10px; padding: 0 14px; }
+  .rk-cta { padding: 10px 20px; font-size: 13px; }
+  .rk-item.rk-live { margin-left: 0; margin-right: 0; }
+  .rk-focus-meta { padding: 0 16px; }
+  .rk-focus-sub   { font-size: 12px; }
+  .rk-focus-tabs  { gap: 34px; }
+  .rk-focus-close { top: 14px; right: 16px; }
+  .rk-focus-name  { font-size: 20px; }
+  .rk-focus-action { flex-direction: column-reverse; align-items: stretch; gap: 10px; max-width: calc(100% - 32px); }
+  .rk-focus-action-name { text-align: center; font-size: 13px; }
+  .rk-focus-action-btn  { text-align: center; }
+  .rk-focus-action-btn::after { left: 50%; right: auto; width: 100%; transform: translateX(-50%) scaleX(0); }
+  .rk-focus-action-btn:hover::after { transform: translateX(-50%) scaleX(1); }
+  .rk-focus { padding: 64px 16px 24px; }
+  .rk-focus-stage { --rk-h: min(48vh, 480px); }
+}
