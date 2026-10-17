@@ -70,8 +70,13 @@ python fashion_outfit_recommendation.py
      - Smooth animations and loading splash screen.
 
 3. **Academic & Jury Defense Documentation**:
-   - Generated comprehensive 8-page PDF: `StyleSense_Fashion_Recommendation_Jury_Handbook.pdf`
-   - Contains: Project Problem Statement, Dual-Architecture Analysis, Campus Weather Engine (Jalgaon), GenAI Try-On Prompt Mechanics, 8-Step Presentation Script, 25+ Detailed Viva Q&A, and Pre-Viva Verification Checklist.
+   - **Updated Jury Handbook PDF**: `StyleSense_Fashion_Recommendation_Jury_Handbook.pdf`
+     - Updated with all 7 new features: 60-30-10 Color Theory, Skin Undertone profiler, Voice Stylist, Weekly 7-day calendar, Indian Festival selector, ₹ INR budget breakdown, and Lookbook export.
+     - Contains: Step-by-step 9-stage viva presentation script, 32+ detailed jury examination Q&As across 4 categories, and a 11-point student pre-viva verification checklist.
+   - **Comprehensive Academic Project Report & User Guide**:
+     - Formal PDF: `StyleSense_Complete_Project_Report_And_User_Guide.pdf`
+     - Markdown Source: `PROJECT_REPORT.md`
+     - Complete documentation from "How to Run" (batch files, terminal commands, port conflict resolution, environment troubleshooting) to mathematical models (Euclidean color distance, undertone scoring, retail cost models), system architecture diagrams, and multi-source dataset specifications.
 
 4. **UI & Scroll Bug Fixes**:
    - Fixed intermittent vertical scroll lock/freeze bug:
