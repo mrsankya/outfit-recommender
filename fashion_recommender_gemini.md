@@ -100,4 +100,7 @@ python fashion_outfit_recommendation.py
      - 1-click modal picker to assign saved wardrobe outfits to specific days of the week.
      - "Auto-Schedule Week" algorithmic engine that intelligently balances occasions across the full week.
      - Full persistence in `localStorage` (`weeklyOutfitPlan`).
+   - **Feature 5: Indian Festival & Cultural Event Dress Code Selector**:
+     - Dedicated selector covering key Indian celebrations: Diwali & Puja, Royal Wedding & Baraat, Haldi & Sangeet, Navratri Garba, Eid & Festive Dawat, and College Traditional Day.
+     - Automatically applies traditional/ethnic occasion filters, curated color palettes (e.g. Haldi Mustard, Royal Maroon, Chikankari White), and provides expert styling tips with matching outfits boosted to the top.
 

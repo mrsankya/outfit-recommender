@@ -7,6 +7,7 @@ import WeatherWidget from '../components/WeatherWidget';
 import ClothUploadModal from '../components/ClothUploadModal';
 import StyleProfileModal from '../components/StyleProfileModal';
 import VoiceSearch from '../components/VoiceSearch';
+import FestivalEventSelector from '../components/FestivalEventSelector';
 import './Recommend.css';
 
 const OCCASION_ICONS = {
@@ -61,6 +62,7 @@ export default function Recommend() {
   const [searched, setSearched] = useState(false);
   const [showUploadModal, setShowUploadModal] = useState(false);
   const [showProfileModal, setShowProfileModal] = useState(false);
+  const [activeFestivalId, setActiveFestivalId] = useState(null);
   const [customOutfits, setCustomOutfits] = useState([]);
   const [styleProfile, setStyleProfile] = useState(() => {
     try {
@@ -165,8 +167,38 @@ export default function Recommend() {
     setSearched(true);
   }, [occasion, season, style, customOutfits, styleProfile]);
 
+  const handleSelectFestival = useCallback((event) => {
+    if (activeFestivalId === event.id) {
+      setActiveFestivalId(null);
+      return;
+    }
+
+    setActiveFestivalId(event.id);
+    setOccasion('Traditional');
+    setStyle('Ethnic');
+    if (event.season) setSeason(event.season);
+
+    let baseResults = getRecommendations('Traditional', event.season || 'Any', 'Ethnic');
+
+    // Prioritize outfits matching the event's colors
+    if (event.colors && event.colors.length > 0) {
+      const targetColors = event.colors.map(c => c.toLowerCase());
+      baseResults = [...baseResults].sort((a, b) => {
+        const aMatch = a.colours?.some(c => targetColors.some(tc => c.toLowerCase().includes(tc)));
+        const bMatch = b.colours?.some(c => targetColors.some(tc => c.toLowerCase().includes(tc)));
+        if (aMatch && !bMatch) return -1;
+        if (!aMatch && bMatch) return 1;
+        return 0;
+      });
+    }
+
+    setResults(baseResults);
+    setSearched(true);
+  }, [activeFestivalId]);
+
   const handleReset = () => {
     setOccasion('Any'); setSeason('Any'); setStyle('Any');
+    setActiveFestivalId(null);
     setResults(null); setSearched(false);
   };
 
@@ -183,7 +215,7 @@ export default function Recommend() {
             <h1 className="page-title">Find your look</h1>
             <p className="page-desc">
               Filter by occasion, season, and style, leverage live weather-aware recommendations,
-              speak via voice stylist, personalize according to your skin undertone & silhouette, or upload your own wardrobe items.
+              explore Indian festival dress codes, speak via voice stylist, or upload your own wardrobe items.
             </p>
           </motion.div>
         </div>
@@ -192,6 +224,12 @@ export default function Recommend() {
       <div className="container recommend-body">
         {/* Live Weather Stylist Widget */}
         <WeatherWidget onApplyWeatherSeason={handleWeatherApply} />
+
+        {/* Indian Cultural Festival & Wedding Dress Code Selector */}
+        <FestivalEventSelector
+          onSelectEvent={handleSelectFestival}
+          activeEventId={activeFestivalId}
+        />
 
         {/* Filter Panel */}
         <motion.div

@@ -1,0 +1,186 @@
+/* src/components/FestivalEventSelector.css */
+.fes-wrapper {
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px 24px;
+  margin-bottom: 24px;
+  transition: all 0.25s ease;
+}
+
+.fes-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fes-title {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.fes-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #d97706;
+  background: rgba(217, 119, 6, 0.12);
+  border: 1px solid rgba(217, 119, 6, 0.3);
+  padding: 3px 10px;
+  border-radius: 9999px;
+  width: fit-content;
+}
+
+.fes-header h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.fes-toggle-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.fes-toggle-btn:hover {
+  background: var(--bg);
+  color: var(--text-primary);
+}
+
+.fes-content {
+  margin-top: 16px;
+  animation: fesFade 0.3s ease;
+}
+
+@keyframes fesFade {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fes-subtext {
+  font-size: 13.5px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.fes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+@media (max-width: 900px) {
+  .fes-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 580px) {
+  .fes-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.fes-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.fes-card:hover {
+  border-color: #d97706;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(217, 119, 6, 0.12);
+}
+
+.fes-card.active {
+  border-color: #d97706;
+  background: rgba(217, 119, 6, 0.05);
+  box-shadow: 0 0 0 2px rgba(217, 119, 6, 0.3);
+}
+
+.fes-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.fes-icon {
+  font-size: 22px;
+}
+
+.fes-card-badge {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #d97706;
+  background: rgba(217, 119, 6, 0.1);
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+
+.fes-card-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.fes-card-dress {
+  font-size: 12.5px;
+  color: var(--text-muted);
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.fes-card-palette {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  margin-top: auto;
+}
+
+.fes-color-tag {
+  font-size: 11px;
+  padding: 2px 7px;
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--text-secondary);
+}
+
+.fes-active-tip {
+  margin-top: 12px;
+  padding: 10px 12px;
+  background: rgba(217, 119, 6, 0.1);
+  border-radius: 8px;
+  font-size: 12px;
+  color: var(--text-primary);
+  line-height: 1.4;
+  border-left: 3px solid #d97706;
+}
