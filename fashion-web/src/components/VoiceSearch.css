@@ -1,0 +1,111 @@
+/* src/components/VoiceSearch.css */
+.voice-search-wrapper {
+  margin: 14px 0 6px 0;
+}
+
+.voice-search-main {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.voice-mic-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  background: var(--bg-soft);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  border-radius: 9999px;
+  font-size: 13.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  user-select: none;
+}
+
+.voice-mic-btn:hover {
+  background: rgba(239, 68, 68, 0.1);
+  border-color: rgba(239, 68, 68, 0.4);
+  color: #ef4444;
+  transform: translateY(-1px);
+}
+
+.voice-mic-btn.listening {
+  background: #ef4444;
+  color: #ffffff;
+  border-color: #ef4444;
+  box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.25);
+  animation: pulse-border 1.5s infinite;
+}
+
+@keyframes pulse-border {
+  0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.5); }
+  70% { box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+}
+
+.voice-feedback-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: 9999px;
+  padding: 8px 16px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  animation: fadeIn 0.3s ease;
+  max-width: 100%;
+}
+
+.voice-feedback-pill.active {
+  border-color: rgba(239, 68, 68, 0.4);
+  color: var(--text-primary);
+  background: rgba(239, 68, 68, 0.06);
+}
+
+.voice-sparkle-icon {
+  color: #eab308;
+  flex-shrink: 0;
+}
+
+.voice-feedback-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Audio wave animation when listening */
+.voice-wave-bars {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  height: 14px;
+}
+
+.voice-wave-bars span {
+  display: inline-block;
+  width: 3px;
+  background: #ef4444;
+  border-radius: 2px;
+  animation: soundWave 0.8s ease-in-out infinite alternate;
+}
+
+.voice-wave-bars span:nth-child(1) { height: 6px; animation-delay: 0.1s; }
+.voice-wave-bars span:nth-child(2) { height: 14px; animation-delay: 0.3s; }
+.voice-wave-bars span:nth-child(3) { height: 10px; animation-delay: 0.2s; }
+.voice-wave-bars span:nth-child(4) { height: 8px; animation-delay: 0.4s; }
+
+@keyframes soundWave {
+  0% { transform: scaleY(0.4); }
+  100% { transform: scaleY(1.3); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}

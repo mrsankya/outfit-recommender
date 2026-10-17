@@ -6,6 +6,7 @@ import OutfitCard from '../components/OutfitCard';
 import WeatherWidget from '../components/WeatherWidget';
 import ClothUploadModal from '../components/ClothUploadModal';
 import StyleProfileModal from '../components/StyleProfileModal';
+import VoiceSearch from '../components/VoiceSearch';
 import './Recommend.css';
 
 const OCCASION_ICONS = {
@@ -128,6 +129,42 @@ export default function Recommend() {
     }
   };
 
+  const handleVoiceFilter = useCallback(({ occasion: newOccasion, season: newSeason, style: newStyle }) => {
+    let occ = newOccasion !== undefined ? newOccasion : occasion;
+    let sea = newSeason !== undefined ? newSeason : season;
+    let sty = newStyle !== undefined ? newStyle : style;
+
+    if (newOccasion) setOccasion(newOccasion);
+    if (newSeason)   setSeason(newSeason);
+    if (newStyle)    setStyle(newStyle);
+
+    let baseResults = getRecommendations(occ, sea, sty);
+    const matchedCustom = customOutfits.filter(o =>
+      (occ === "Any" || o.occasion === occ) &&
+      (sea === "Any" || o.season   === sea) &&
+      (sty === "Any" || o.style    === sty)
+    );
+    let allMatches = [...matchedCustom, ...baseResults];
+
+    if (styleProfile && styleProfile.palette?.bestColors?.length) {
+      const bestColors = styleProfile.palette.bestColors.map(c => c.toLowerCase());
+      allMatches = [...allMatches].sort((a, b) => {
+        const aScore = a.items?.reduce((acc, it) => {
+          const match = bestColors.some(bc => (it.color || '').toLowerCase().includes(bc) || (it.name || '').toLowerCase().includes(bc));
+          return acc + (match ? 1 : 0);
+        }, 0) || 0;
+        const bScore = b.items?.reduce((acc, it) => {
+          const match = bestColors.some(bc => (it.color || '').toLowerCase().includes(bc) || (it.name || '').toLowerCase().includes(bc));
+          return acc + (match ? 1 : 0);
+        }, 0) || 0;
+        return bScore - aScore;
+      });
+    }
+
+    setResults(allMatches);
+    setSearched(true);
+  }, [occasion, season, style, customOutfits, styleProfile]);
+
   const handleReset = () => {
     setOccasion('Any'); setSeason('Any'); setStyle('Any');
     setResults(null); setSearched(false);
@@ -146,7 +183,7 @@ export default function Recommend() {
             <h1 className="page-title">Find your look</h1>
             <p className="page-desc">
               Filter by occasion, season, and style, leverage live weather-aware recommendations,
-              personalize according to your skin undertone & silhouette, or upload your own wardrobe items.
+              speak via voice stylist, personalize according to your skin undertone & silhouette, or upload your own wardrobe items.
             </p>
           </motion.div>
         </div>
@@ -191,6 +228,9 @@ export default function Recommend() {
             current={style}
             onChange={setStyle}
           />
+
+          {/* Voice-Controlled Stylist */}
+          <VoiceSearch onApplyVoiceFilter={handleVoiceFilter} />
 
           <div className="filter-actions-row">
             <button className="search-btn" onClick={handleSearch}>

@@ -90,4 +90,9 @@ python fashion_outfit_recommendation.py
      - Interactive modal profiler with Warm, Cool, and Neutral undertones, live seasonal palette preview (hex swatches), body silhouette selector (Lean, Athletic, Broad, Curvy), and style aesthetic preferences.
      - Automatically prioritizes and boosts outfits matching the user's flattering undertone color palette.
      - Persistent in `localStorage` with active stylist status indicator chip and quick edit consultation bar.
+   - **Feature 3: Voice-Controlled Stylist (Speech-to-Outfit NLP & Audio Feedback)**:
+     - Hands-free voice queries using HTML5 Web Speech Recognition API (`window.SpeechRecognition` / `webkitSpeechRecognition`).
+     - Parses natural language voice commands (e.g. "show me traditional outfits for winter", "casual summer streetwear", "party clothes in ethnic style") into discrete occasion, season, and style filters.
+     - Real-time animated audio wave and pulsing indicator during voice capture.
+     - Automatic speech synthesis feedback ("Showing Traditional, Winter looks") via Web Speech Synthesis API.
 
